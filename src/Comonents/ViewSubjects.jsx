@@ -94,22 +94,23 @@ export default function ViewSubjects({ submitted }) {
                                 </TableRow>
                             </TableHead>
                             <TableBody>
-                                {subjects.length === 0 ? (
+                                {subjects?.length === 0 ? (
                                     <TableRow>
                                         <TableCell colSpan={2} align="center">
                                             No Subjects Available
                                         </TableCell>
                                     </TableRow>
                                 ) : (
-                                    subjects?.map((subject) => (
-                                        <TableRow key={subject?.id}>
-                                            <TableCell>{subject?.subject_name}</TableCell>
-                                            <TableCell align="center">
-                                                <IconButton onClick={() => handleEditClick(subject)}><EditIcon /></IconButton>
-                                                <IconButton onClick={() => { handleDelete(subject._id) }}><DeleteIcon /></IconButton>
-                                            </TableCell>
-                                        </TableRow>
-                                    ))
+                                    <></>
+                                    // subjects?.map((subject) => (
+                                    //     <TableRow key={subject?.id}>
+                                    //         <TableCell>{subject?.subject_name}</TableCell>
+                                    //         <TableCell align="center">
+                                    //             <IconButton onClick={() => handleEditClick(subject)}><EditIcon /></IconButton>
+                                    //             <IconButton onClick={() => { handleDelete(subject._id) }}><DeleteIcon /></IconButton>
+                                    //         </TableCell>
+                                    //     </TableRow>
+                                    // ))
                                 )}
                             </TableBody>
 
