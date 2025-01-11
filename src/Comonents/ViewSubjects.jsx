@@ -101,7 +101,7 @@ export default function ViewSubjects({ submitted }) {
                                         </TableCell>
                                     </TableRow>
                                 ) : (
-                                    subjects.map((subject) => (
+                                    subjects?.map((subject) => (
                                         <TableRow key={subject?.id}>
                                             <TableCell>{subject?.subject_name}</TableCell>
                                             <TableCell align="center">
